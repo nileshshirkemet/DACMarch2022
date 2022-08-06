@@ -1,0 +1,37 @@
+int[] slowBuf = new int[20]; //heap allocation
+FillSquares(slowBuf);
+
+unsafe
+{
+    int* fastBuf = stackalloc int[20]; //stack allocation
+    FillSquares(fastBuf, 20);
+    FillSquares(&fastBuf[5], 10);
+}
+
+void FillSquares(int[] store)
+{
+    for(int i = 0; i < store.Length; ++i)
+        store[i] = i * i;
+}
+
+unsafe void FillSquares(int* store, int count)
+{
+   for(int i = 0; i < count; ++i)
+        store[i] = i * i; 
+}
+
+/**************************************************************/
+
+Span<int> slowBuf = new int[20];
+FillSquares(slowBuf);
+
+Span<int> fastBuf = stackalloc int[20]; 
+FillSquares(fastBuf);
+
+FillSquares(fastBuf.Slice(5, 10));
+
+void FillSquares(Span<int> store)
+{
+    for(int i = 0; i < store.Length; ++i)
+        store[i] = i * i;
+}
