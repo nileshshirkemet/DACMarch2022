@@ -1,0 +1,34 @@
+    1  cd MDAC/Foundations/Modularization/
+    2  ./run 
+    3  rm primes.o
+    4  ./run 
+    5  cc -c primes.c 
+    6  c++ externctest.cpp primes.o -o run
+    7  ld -shared primes.o -o primes.so
+    8  ls
+    9  vi dynlinktest.py
+   10  python3 dynlinktest.py 
+   11  vi dynlinktest.py
+   12  python3 dynlinktest.py 
+   13  vi dynlinktest.py
+   14  man printf
+   15  ld -shared primes.o gcd.o -o primes.so
+   16  rm primes.so
+   17  python3 dynlinktest.py 
+   18  ld -shared primes.o gcd.o -o primes.so
+   19  python3 dynlinktest.py 
+   20  vi banner1.h
+   21  vi banner1.c
+   22  cc -c banner1.c
+   23  vi udttest1.c
+   24  cc udttest1.c banner1.o -o run
+   25  ./run 
+   26  vi udttest1.c
+   27  vi banner1.h
+   28  vi banner1.c
+   29  vi udttest1.c
+   30  ls /usr/include/
+   31  ls
+   32  vi udttest1.c
+   33  vi banner1.c
+   34  history >> ../cmd220325.txt

@@ -1,0 +1,61 @@
+    1  cd MDAC/Foundations/Procedures/
+    2  vi voidptrtest.c
+    3  cc voidptrtest.c -o run
+    4  ./run
+    5  vi voidptrtest.c
+    6  cc voidptrtest.c -o run
+    7  ./run
+    8  vi voidptrtest.c
+    9  cc voidptrtest.c -o run
+   10  ls
+   11  rm run
+   12  ls
+   13  rm run1
+   14  ls
+   15  cc voidptrtest.c -o run
+   16  ls
+   17  ./run
+   18  vi voidptrtest.c
+   19  cc voidptrtest.c -o run
+   20  ./run
+   21  vi voidptrtest.c
+   22  cc voidptrtest.c -o run
+   23  ./run
+   24  vi voidptrtest.c
+   25  cc voidptrtest.c -o run
+   26  ./run
+   27  vi voidptrtest.c
+   28  cc voidptrtest.c -o run
+   29  ./run
+   30  vi voidptrtest.c
+   31  cc voidptrtest.c -o run
+   32  vi voidptrtest.c
+   33  cc voidptrtest.c -o run
+   34  ./run
+   35  vi voidptrtest.c
+   36  cc voidptrtest.c -o run
+   37  ./run
+   38  vi voidptrtest.c
+   39  cc voidptrtest.c -o run
+   40  ./run
+   41  vi voidptrtest.c
+   42  cc voidptrtest.c -o run
+   43  vi voidptrtest.c
+   44  vi funcptrtest.c
+   45  cc funcptrtest.c -o run
+   46  ./run
+   47  vi funcptrtest.c
+   48  cc funcptrtest.c -o run
+   49  vi funcptrtest.c
+   50  cc funcptrtest.c -o run
+   51  ./run
+   52  vi funcptrtest.c
+   53  cc funcptrtest.c -o run
+   54  vi funcptrtest.c
+   55  cc funcptrtest.c -o run
+   56  vi funcptrtest.c
+   57  cc funcptrtest.c -o run
+   58  vi funcptrtest.c
+   59  vi voidptrtest.c
+   60  vi funcptrtest.c
+   61  history >> ../cmd220322.txt 

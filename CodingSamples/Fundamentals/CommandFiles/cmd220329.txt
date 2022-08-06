@@ -1,0 +1,39 @@
+    1  cd MDAC/Foundations/Abstraction/
+    2  cp banner2.h banner3.h
+    3  vi banner3.h 
+    4  cp classtest2.cpp objreftest.cpp
+    5  vi objreftest.cpp 
+    6  c++ objreftest.cpp -o run
+    7  vi banner3.h 
+    8  c++ objreftest.cpp -o run
+    9  ./run 
+   10  vi objreftest.cpp 
+   11  c++ objreftest.cpp -o run
+   12  ./run 
+   13  vi objreftest.cpp 
+   14  vi banner3.h 
+   15  vi objreftest.cpp 
+   16  c++ objreftest.cpp -o run
+   17  ./run 
+   18  vi objreftest.cpp 
+   19  c++ objreftest.cpp -o run
+   20  ./run 
+   21  vi objreftest.cpp 
+   22  c++ objreftest.cpp -o run4
+   23  vi objreftest.cpp 
+   24  ulimit -s
+   25  vi objarraytest.cpp
+   26  c++ objarraytest.cpp -o run
+   27  ./run 
+   28  vi objarraytest.cpp
+   29  c++ objarraytest.cpp -o run
+   30  ./run 
+   31  vi objarraytest.cpp
+   32  c++ objarraytest.cpp -o run
+   33  ./run 
+   34  vi objarraytest.cpp
+   35  c++ objarraytest.cpp -o run
+   36  ./run 
+   37  vi objarraytest.cpp
+   38  vi interval.h
+   39  history >> ../cmd220329.txt

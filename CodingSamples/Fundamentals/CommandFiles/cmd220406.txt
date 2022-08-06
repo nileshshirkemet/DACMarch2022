@@ -1,0 +1,43 @@
+    1  cd MDAC/Foundations/Platform/
+    2  vi streamiotest.c 
+    3  cc streamiotest.c encbuf.o -o run
+    4  vi data1.txt 
+    5  ./run 
+    6  ./run data1.txt data2.txt
+    7  ls
+    8  vi data2.txt 
+    9  ./run data1.txt data2.txt
+   10  ./run data2.txt data3.txt
+   11  vi data3.txt 
+   12  vi streamiotest.c 
+   13  cc streamiotest.c encbuf.o -o run
+   14  rm data2.txt data3.txt
+   15  ./run data1.txt data2.txt
+   16  vi data2.txt 
+   17  ./run data2.txt data3.txt
+   18  vi data3.txt 
+   19  vi streamiotest.c 
+   20  cp streamiotest.c memmapiotest.c
+   21  vi memmapiotest.c 
+   22  vi revbuf.c
+   23  cc -c revbuf.c 
+   24  vi memmapiotest.c 
+   25  man fstat
+   26  vi memmapiotest.c 
+   27  cc memmapiotest.c revbuf.o -o run
+   28  vi data1.txt 
+   29  ./run 
+   30  ./run data4.txt
+   31  ./run data1.txt 
+   32  vi data1.txt 
+   33  ./run data1.txt 
+   34  vi data1.txt 
+   35  vi memmapiotest.c 
+   36  ./run data4.txt
+   37  vi memmapiotest.c 
+   38  man mmap
+   39  man fstat
+   40  vi memmapiotest.c 
+   41  vi streamiotest.c 
+   42  vi memmapiotest.c 
+   43  history >> ../cmd220406.txt

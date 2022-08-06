@@ -1,0 +1,79 @@
+    1  cd MDAC/Foundations/Platform/
+    2  ls
+    3  cc memmapiotest.c -o run
+    4  cc memmapiotest.c revbuf.o -o run
+    5  cc -shared revbuf.c -o librevbuf.so
+    6  ls
+    7  cc memmapiotest.c -o run
+    8  cc memmapiotest.c -lrevbuf -o run
+    9  cc memmapiotest.c -L. -lrevbuf -o run
+   10  ./run
+   11  cp librevbuf.so /usr/lib
+   12  sudo cp librevbuf.so /usr/lib
+   13  ./run
+   14  ./run data1.txt 
+   15  sudo /usr/lib/librevbuf.so 
+   16  sudo rm /usr/lib/librevbuf.so 
+   17  ./run
+   18  cc -shared revbuf.c -o librevbuf.so
+   19  cc memmapiotest.c -L. -lrevbuf -o run
+   20  ./run 
+   21  export LD_LIBRARY_PATH=.
+   22  ./run 
+   23  vi ~/.bashrc 
+   24  ./run 
+   25  ./run data1.txt
+   26  unset LD_LIBRARY_PATH
+   27  ./run data1.txt
+   28  cc -shared encbuf.c -o libencbuf.so
+   29  vi revbuf.c 
+   30  vi encbuf.c 
+   31  cc -shared encbuf.c -o libencbuf.so
+   32  cc -shared -fPIC encbuf.c -o libencbuf.so
+   33  cc -shared -fPIC revbuf.c -o librevbuf.so
+   34  cc streamiotest.c -L. -lencbuf.so -o run
+   35  cc streamiotest.c -L. -lencbuf -o run
+   36  ./run 
+   37  export LD_LIBRARY_PATH=.
+   38  ./run 
+   39  vi shobjdltest.c
+   40  cc shobjdltest.c -o run
+   41  ls /usr/lib/x86_64-linux-gnu/
+   42  ls
+   43  cc shobjdltest.c -ldl -o run
+   44  man dlopen
+   45  vi shobjdltest.c
+   46  vi revbuf.c 
+   47  vi encbuf.c 
+   48  vi shobjdltest.c
+   49  cc shobjdltest.c -ldl -o run
+   50  ./run 
+   51  ./run libxyz.so
+   52  ./run libdmmp.so
+   54  ./run librevbuf.so
+   55  ./run libencbuf.so
+   56  ls /usr/lib/
+   57  vi shobjdltest.c
+   58  vi encbuf.c 
+   59  vi shobjdltest.c
+   60  cc shobjdltest.c -ldl -o run
+   61  ./run
+   62  ./run libxyz.so
+   63  ./run libdmmp.so
+   64  ./run librevbuf.so
+   65  ./run libencbuf.so
+   66  ./run librevbuf.so
+   67  ./run libencbuf.so
+   68  vi shobjdltest.c
+   69  vi ../Procedures/funcptrtest.c 
+   70  vi shobjdltest.c
+   71  vi greeter.c
+   72  ps -A
+   73  vi greeter.c
+   74  cc greeter.c -o greeter
+   75  ps
+   76  ./greeter Jack Jill John
+   77  vi greeter.c
+   78  ./greeter
+   79  vi greeter.c
+   80  history >> ../cmd220407.txt

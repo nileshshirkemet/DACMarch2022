@@ -1,0 +1,41 @@
+    1  cd MDAC/Foundations/Polymorphism/
+    2  vi series.h
+    3  vi adttest.cpp
+    4  c++ adttest.cpp -o run
+    5  vi adttest.cpp
+    6  c++ adttest.cpp -o run
+    7  vi series.h
+    8  vi adttest.cpp
+    9  c++ adttest.cpp -o run
+   10  vi adttest.cpp
+   11  c++ adttest.cpp -o run
+   12  vi series.h
+   13  vi series.cpp
+   14  vi series.h
+   15  vi series.cpp
+   16  vi series.h
+   17  vi series.cpp
+   18  c++ -c series.cpp
+   19  vi series.cpp
+   20  c++ -c series.cpp
+   21  vi series.h
+   22  vi series.cpp
+   23  vi adttest.cpp 
+   24  vi series.cpp
+   25  vi adttest.cpp 
+   26  c++ adttest.cpp series.o -o run
+   27  vi adttest.cpp 
+   28  c++ adttest.cpp series.o -o run
+   29  ./run 
+   30  vi adttest.cpp 
+   31  cp adttest.cpp rttitest.cpp
+   32  vi rttitest.cpp 
+   33  c++ rttitest.cpp series.o run
+   34  ./run 
+   35  vi rttitest.cpp 
+   36  c++ rttitest.cpp series.o run
+   37  vi rttitest.cpp 
+   38  c++ rttitest.cpp series.o run
+   39  ./run 
+   40  vi rttitest.cpp 
+   41  history >> ../cmd220401.txt

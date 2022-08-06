@@ -1,0 +1,32 @@
+    1  cd MDAC/Foundations/
+    2  mkdir Platform
+    3  cd Platform/
+    4  vi syssvctest.c
+    5  cc syssvctest.c -o run
+    6  ./run 
+    7  ./run Jack Jill John
+    8  vi syssvctest.c
+    9  cc syssvctest.c -o run
+   10  ./run Jack Jill John
+   11  ./run Jack Jill John Jeff
+   12  vi syssvctest.c
+   13  ./run Jack Jill John Jeff
+   14  cc syssvctest.c -o run
+   15  ./run Jack Jill John Jeff
+   16  ./run Jane Jack and Jill John
+   17  ./run Jane "Jack and Jill" John
+   18  ./run Jane 'Jack and Jill' John
+   19  vi syssvctest.c
+   20  cc syssvctest.c -o run
+   21  cc -D LINUX_X64 syssvctest.c -o run
+   22  vi syssvctest.c
+   23  cc -D LINUX_X64 syssvctest.c -o run
+   24  ./run Jack Jill John Jeff
+   25  vi syssvctest.c
+   26* 
+   27  ./run Jack Jill John Jeff
+   28  vi syssvctest.c
+   29  cc -D LINUX_X64 syssvctest.c -o run
+   30  cc -D UNIX_ANY syssvctest.c -o run
+   31  vi syssvctest.c
+   32  history >> ../cmd220404.txt

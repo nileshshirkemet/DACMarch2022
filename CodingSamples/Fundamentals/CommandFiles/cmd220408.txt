@@ -1,0 +1,32 @@
+    1  cd MDAC/Foundations/Platform/
+    2  vi greeter.c
+    3  ./greeter
+    4  ./greeter Jack Jill
+    5  vi forkexectest.c
+    6  cc forkexectest.c -o run
+    7  vi forkexectest.c
+    8  cc forkexectest.c -o run
+    9  ./run
+   10  vi forkexectest.c
+   11  cc forkexectest.c -o run
+   12  ./run
+   13  vi forkexectest.c
+   14  cc forkexectest.c -o run
+   15  ./run
+   16  vi forkexectest.c
+   17  cc forkexectest.c -o run
+   18  ./run
+   19  vi forkexectest.c
+   20  vi worker.h
+   21  vi pipetest.c
+   22  cc pipetest.c -o run
+   23  ./run 
+   24  vi pipetest.c
+   25  cc pipetest.c -o run
+   26  ./run 
+   27  vi pipetest.c
+   28  cc pipetest.c -o run
+   29  vi pipetest.c
+   30  cc pipetest.c -o run
+   31  ./run 
+   32  history >> ../cmd220408.txt

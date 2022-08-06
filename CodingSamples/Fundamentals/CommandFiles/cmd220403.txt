@@ -1,0 +1,63 @@
+    1  cd MDAC/Foundations/Polymorphism/
+    2  vi ../Procedures/voidptrtest.c 
+    3  vi templatetest1.cpp
+    4  c++ templatetest1.cpp -o run
+    5  ./run 
+    6  vi templatetest1.cpp
+    7  c++ templatetest1.cpp -o run
+    8  vi templatetest1.cpp
+    9  c++ templatetest1.cpp -o run
+   10  ./run 
+   11  vi templatetest1.cpp
+   12  c++ templatetest1.cpp -o run
+   13  ./run 
+   14  vi templatetest1.cpp
+   15  c++ -c templatetest1.cpp 
+   17  c++ -c templatetest1.cpp 
+   18  objdump -t templatetest1.o
+   19  c++ -c templatetest1.cpp 
+   20  vi templatetest1.cpp
+   21  c++ templatetest1.cpp -o run
+   22  vi templatetest1.cpp
+   23  cp ../Abstraction/interval.h .
+   24  vi interval.h 
+   25  vi templatetest1.cpp
+   26  c++ templatetest1.cpp -o run
+   27  vi templatetest1.cpp
+   28  vi interval.h 
+   29  c++ templatetest1.cpp -o run
+   30  vi templatetest1.cpp
+   31  c++ templatetest1.cpp -o run
+   32  vi templatetest1.cpp
+   33  vi interval.h 
+   34  c++ templatetest1.cpp -o run
+   35  vi templatetest1.cpp
+   36  ./run 
+   37  vi interval.h 
+   38  c++ templatetest1.cpp -o run
+   39  vi interval.h 
+   40  c++ templatetest1.cpp -o run
+   41  ./run 
+   42  vi interval.h 
+   43  vi templatetest1.cpp
+   44  vi templatetest2.cpp 
+   45  vi templatetest1.cpp
+   46  vi templatetest2.cpp 
+   47  c++ templatetest2.cpp -o run
+   48  ./run 
+   49  vi templatetest2.cpp 
+   50  c++ templatetest2.cpp -o run
+   51  vi templatetest2.cpp 
+   52  vi interval.h 
+   53  c++ templatetest2.cpp -o run
+   54  ./run
+   55  vi templatetest2.cpp 
+   56  vi interval.h 
+   57  c++ templatetest2.cpp -o run
+   58  vi templatetest2.cpp 
+   59  c++ templatetest2.cpp -o run
+   60  ./run
+   61  vi templatetest2.cpp 
+   62  c++ templatetest2.cpp -o run
+   63  vi templatetest2.cpp 
+   64  history >> ../cmd220403.txt

@@ -1,0 +1,33 @@
+    1  cd MDAC/Foundations/Control/
+    2  ls
+    3  vi whiletest.c 
+    4  cc whiletest.c -o run
+    5  ./run 
+    6  vi whiletest.c 
+    7  cc whiletest.c -o run
+    8  ./run 
+    9  vi whiletest.c 
+   10  ./run 
+   11  vi fortest.c
+   12  cc fortest.c -o run 
+   13  ./run 
+   14  vi fortest.c
+   15  cc fortest.c -o run 
+   16  ./run 
+   17  vi fortest.c
+   18  cc fortest.c -o run 
+   19  ./run 
+   20  vi fortest.c
+   21  cd ..
+   22  mkdir Procedures
+   23  cd Procedures/
+   24  cp ../Basics/system.o .
+   25  cp ../Basics/console.i .
+   26  cp ../Control/branchtest.s calltest.s
+   27  vi calltest.s 
+   28  as calltest.s 
+   29  ld a.out system.o -o run
+   30  ./run 
+   31  as calltest.s 
+   32  vi calltest.s 
+   33  history >> ../cmd220315.txt

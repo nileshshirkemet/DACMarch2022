@@ -1,0 +1,42 @@
+    1  cd MDAC/Foundations/Platform/
+    2  vi semaphoretest.c 
+    3  cc semaphoretest.c -o run
+    4  cc semaphoretest.c -pthread -o run
+    5  ./run 
+    6  vi semaphoretest.c 
+    7  vi threadtest.c
+    9  ./run 
+   10  cc threadtest.c -pthread -o run
+   11  ./run 
+   12  vi threadtest.c
+   13  cc threadtest.c -pthread -o run
+   14  ./run 
+   15  vi threadtest.c
+   16  man pthread_create
+   17  vi threadtest.c
+   18  cc threadtest.c -pthread -o run
+   19  vi threadtest.c
+   20  cc threadtest.c -pthread -o run
+   21  ./run 
+   22  vi threadtest.c
+   23  vi mutextest.c
+   24  cc mutextest.c -pthread -o run
+   25  vi mutextest.c
+   26  cc mutextest.c -pthread -o run
+   27  vi mutextest.c
+   28  cc mutextest.c -pthread -o run
+   29  ./run 
+   30  vi mutextest.c
+   31  cc mutextest.c -pthread -o run
+   32  ./run 
+   33  vi mutextest.c
+   34  cc mutextest.c -pthread -o run
+   35  ./run 
+   36  vi mutextest.c
+   37  cc mutextest.c -pthread -o run
+   38  ./run 
+   39  vi mutextest.c
+   40  cc mutextest.c -pthread -o run
+   41  ./run 
+   42  vi mutextest.c
+   43  history >> ../cmd220410.txt

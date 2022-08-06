@@ -1,0 +1,47 @@
+    1  cd MDAC/Foundations/Procedures/
+    2  ls
+    3  cc -c functiontest.c 
+    4  ls
+    5  objdump -t functiontest.o
+    6  vi functiontest.c 
+    7  vi funcovldtest.cpp
+    8  c++ funcovldtest.cpp -o run
+    9  ./run 
+   10  c++ -c funcovldtest.cpp 
+   11  objdump -t funcovldtest.o
+   12  objdump -t functiontest.o
+   13  vi funcovldtest.cpp
+   14  c++filt _Z9RectangleffPd
+   15* 
+   16  vi funcovldtest.cpp
+   17  c++ funcovldtest.cpp -o run
+   18  ./run
+   19  vi funcovldtest.cpp
+   20  c++ -c funcovldtest.cpp 
+   21  objdump -t functiontest.o
+   22  objdump -t funcovldtest.o
+   23  vi funcovldtest.cpp
+   24  vi exceptiontest.cpp
+   25  vi funcovldtest.cpp
+   26  vi exceptiontest.cpp
+   27  c++ exceptiontest.cpp -o run
+   28  ./run
+   29  vi exceptiontest.cpp
+   30  c++ exceptiontest.cpp -o run
+   31  ./run
+   32  vi exceptiontest.cpp
+   33  c++ exceptiontest.cpp -o run
+   34  ./run
+   35  vi exceptiontest.cpp
+   36  c++ exceptiontest.cpp -o run
+   37  ./run
+   38  vi exceptiontest.cpp
+   39  c++ exceptiontest.cpp -o run
+   40  ./run
+   41  vi exceptiontest.cpp
+   42  c++ exceptiontest.cpp -o run
+   43  vi exceptiontest.cpp
+   44  c++ exceptiontest.cpp -o run
+   45  ./run
+   46  vi exceptiontest.cpp
+   47  history >> ../cmd220323.txt

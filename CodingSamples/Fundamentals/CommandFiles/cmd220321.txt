@@ -1,0 +1,28 @@
+    1  cd MDAC/Foundations/
+    2  cd Procedures/
+    3  ls
+    4  vi functiontest.c 
+    5  vi ptrtypetest.c
+    6  cc ptrtypetest.c -o run
+    7  ./run
+    8  vi ptrtypetest.c
+    9  cc ptrtypetest.c -o run
+   10  ./run
+   11  vi ptrtypetest.c
+   12  cc ptrtypetest.c -o run
+   13  ./run
+   14  vi ptrtypetest.c
+   15  vi functiontest.c 
+   16  vi ptrtypetest.c
+   17  cp ptrtypetest.c reftypetest.cpp
+   18  vi reftypetest.cpp 
+   19  c++ reftypetest.cpp -o run
+   20  ./run 
+   21  vi reftypetest.cpp 
+   22  c++ reftypetest.cpp -o run
+   23  ./run 
+   24  vi reftypetest.cpp 
+   25  ll
+   26  cc ptrtypetest.c -o run1
+   27  ll
+   28  history >> ../cmd220321.txt

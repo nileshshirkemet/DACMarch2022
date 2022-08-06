@@ -1,0 +1,34 @@
+    1  cd MDAC/Foundations/Basics/
+    2  cd ..
+    3  mkdir Control
+    4  cd Control/
+    5  cp ../Basics/system.o .
+    6  cp ../Basics/console.i .
+    7  vi branchtest.s
+    8  as branchtest.s 
+    9  ld a.out system.o -o run
+   10  ./run 
+   11  vi branchtest.s
+   12  as branchtest.s 
+   13  ld a.out system.o -o run
+   14  ./run 
+   15  as branchtest.s 
+   16  vi branchtest.s
+   17  as branchtest.s 
+   18  ld a.out system.o -o run
+   19  ./run 
+   20  vi branchtest.s
+   21  vi ifelsetest.c
+   22  ls
+   23  ls /usr/include/
+   24  vi ifelsetest.c
+   25  cc ifelsetest.c -o run
+   26  vi ifelsetest.c
+   27  ./run 
+   28  vi ifelsetest.c
+   29  ./run 
+   30  vi ifelsetest.c
+   31  cc ifelsetest.c -o run
+   32  ./run 
+   33  vi ifelsetest.c
+   34  history >> ../cmd220311.txt

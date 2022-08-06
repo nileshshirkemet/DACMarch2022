@@ -1,0 +1,24 @@
+    1  cd MDAC/Foundations/Basics/
+    2  vi indirectiontest.s 
+    3  as indirectiontest.s 
+    4  ls
+    5  ld a.out system.o -o run
+    6  ./run 
+    7  vi indirectiontest.s 
+    8  vi memaddrtest.s 
+    9  vi indirectiontest.s 
+   10  ./run 
+   11  vi arraytest.c
+   12  cc -c arraytest.c 
+   13  vi arraytest.c
+   14  cc -c arraytest.c 
+   15  ld arraytest.o system.o -o run
+   16  ./run 
+   17  cc -c arraytest.c 
+   18  vi arraytest.c
+   19  cc -c arraytest.c 
+   20  ld arraytest.o system.o -o run
+   21  ./run 
+   22  vi arraytest.c
+   23  ./run 
+   24  history >> ../cmd220310.txt

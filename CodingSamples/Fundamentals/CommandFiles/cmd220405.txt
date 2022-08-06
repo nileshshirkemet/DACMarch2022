@@ -1,0 +1,80 @@
+    1  cd MDAC/Foundations/Platform/
+    2  ls
+    3  vi syssvctest.c 
+    4  cc -D OS_ANY syssvctest.c -o run
+    5  ./run Jack Jill John
+    6  vi syssvctest.c 
+    7  vi signaltest.c
+    8  cc signaltest.c -o run
+    9  ./run 
+   10  vi signaltest.c
+   11  cc signaltest.c -o run
+   12  ./run 
+   13  echo $?
+   14  vi signaltest.c
+   15  cc signaltest.c -o run
+   16  ./run 
+   17  vi signaltest.c
+   18  cc signaltest.c -o run
+   19  ./run 
+   20  vi signaltest.c
+   21  man atexit
+   22  vi signaltest.c
+   23  cc signaltest.c -o run
+   24  vi signaltest.c
+   25  cc signaltest.c -o run
+   26  ./run 
+   27  vi signaltest.c
+   28  cc signaltest.c -o run
+   29  ./run 
+   30  vi signaltest.c
+   31  cc signaltest.c -o run
+   32  ./run 
+   33  kill -l
+   34  cc signaltest.c -o run
+   35  ./run 
+   36  kill -l
+   37  vi signaltest.c
+   38  cc signaltest.c -o run
+   39  ./run 
+   40  vi signaltest.c
+   41  man sigaction
+   42  vi signaltest.c
+   43  ./run 
+   44  echo $?
+   45  vi signaltest.c
+   46  ./run 
+   47  echo $?
+   48  vi signaltest.c
+   49  vi encbuf.c
+   50  cc -c encbuf.c 
+   51  vi streamiotest.c
+   52  cc streamiotest.c -o run
+   53  ./run 
+   54  ./run syssvctest.c 
+   55  ./run syssvctest.c data1.txt
+   56  vi streamiotest.c
+   57  cc streamiotest.c -o run
+   58  vi streamiotest.c
+   59  cc streamiotest.c -o run
+   60  ./run 
+   61  ./run data1.txt
+   62  ./run data1.txt data2.txt
+   63  cp syssvctest.c data1.txt
+   64  vi data1.txt 
+   65  ./run data1.txt data2.txt
+   66  ls
+   67  ./run data2.txt data3.txt
+   68  vi data1.txt 
+   69  vi streamiotest.c
+   70  cc streamiotest.c -o run
+   71  ./run 
+   72  ./run data2.txt data3.txt
+   73  ./run data1.txt syssvctest.c 
+   74  ls
+   75  ./run data1.txt data2.txt
+   76  ls
+   77  vi streamiotest.c
+   78  ./run data1.txt data2.txt
+   79  vi streamiotest.c
+   80  history >> ../cmd220405.txt

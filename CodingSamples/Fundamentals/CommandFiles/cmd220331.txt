@@ -1,0 +1,15 @@
+    1  cd MDAC/Foundations/Polymorphism/
+    2  vi banner.h 
+    3  cp ../Abstraction/classtest1.cpp derivedclasstest.cpp
+    4  vi derivedclasstest.cpp 
+    5  c++ derivedclasstest.cpp -o run
+    6  ./run 
+    7  vi derivedclasstest.cpp 
+    8  vi banner.h 
+    9  c++ derivedclasstest.cpp -o run
+   10  ./run 
+   11  vi derivedclasstest.cpp 
+   12  vi banner.h 
+   13  vi derivedclasstest.cpp 
+   14  vi banner.h 
+   15  history >> ../cmd220331.txt 

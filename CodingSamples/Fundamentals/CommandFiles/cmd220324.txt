@@ -1,0 +1,61 @@
+    1  cd MDAC/Foundations/
+    2  mkdir Modularization
+    3  cd Modularization/
+    4  vi gcdforx64.s
+    5  as gcdforx64.s -o gcd.o
+    6  objdump -t gcd.o
+    7  vi gcdforx64.s
+    8  objdump -t gcd.o
+    9  as gcdforx64.s -o gcd.o
+   10  objdump -t gcd.o
+   11  vi gcdforx64.s
+   12  vi externtest1.c
+   13  cc externtest1.c -o run
+   14  cc externtest1.c gcd.o -o run
+   15  vi externtest1.c
+   16  ./run 
+   17  vi gcdforx64.s
+   18  as gcdforx64.s -o gcd.o
+   19  objdump -t gcd.o
+   20  cc externtest1.c gcd.o -o run
+   21  vi gcdforx64.s
+   22  as gcdforx64.s -o gcd.o
+   23  objdump -t gcd.o
+   24  cc externtest1.c gcd.o -o run
+   25  vi externtest1.c
+   26  vi primes.c
+   27  cc -c primes.c 
+   28  objdump -t primes.o
+   29  vi primes.c
+   30  cc -c primes.c 
+   31  objdump -t primes.o
+   32  vi primes.c
+   33  vi externtest2.c
+   34  cc externtest2.c -o run
+   35  cc externtest2.c primes.o -o run
+   36  ./run 
+   37  vi primes.c
+   38  cc -c primes.c 
+   39  cc externtest2.c primes.o -o run
+   40  ./run 
+   41  cc -c primes.c 
+   42  vi primes.c
+   43  vi externtest2.c
+   44  cp externtest2.c externctest.cpp
+   45  vi externctest.cpp 
+   46  c++ externctest.cpp -o run
+   47  c++ externctest.cpp primes.o -o run
+   48  vi externctest.cpp 
+   49  cp primes.c primes.cpp
+   50  c++ -c primes.cpp
+   51  c++ externctest.cpp primes.o -o run
+   52  objdump -t primes.o
+   53  rm primes.cpp
+   54  rm primes.o
+   55  cc -c primes.c 
+   56  c++ externctest.cpp primes.o -o run
+   57  objdump -t primes.o
+   58  vi externctest.cpp 
+   59  c++ externctest.cpp primes.o -o run
+   60  ./run 
+   61  history >> ../cmd220324.txt

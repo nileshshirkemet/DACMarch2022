@@ -1,0 +1,21 @@
+    1  cd MDAC/Foundations/Control/
+    2  vi switchcasetest.c
+    3  cc switchcasetest.c -o run
+    4  ./run 
+    5  vi switchcasetest.c
+    6  cc switchcasetest.c -o run
+    7  ./run 
+    8  vi switchcasetest.c
+    9  cc switchcasetest.c -o run
+   10  ./run 
+   11  vi switchcasetest.c
+   12  vi looptest.c
+   13  mv looptest.c looptest.s
+   14  vi looptest.s 
+   15  as looptest.s 
+   16  ld a.out system.o -o run
+   17  ./run
+   18  vi looptest.s 
+   19  vi branchtest.s 
+   20  vi looptest.s 
+   21  history >> ../cmd220313.txt

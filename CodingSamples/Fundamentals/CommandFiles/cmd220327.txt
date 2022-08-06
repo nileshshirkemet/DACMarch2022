@@ -1,0 +1,53 @@
+    1  cd MDAC/Foundations/Modularization/
+    2  vi banner1.h
+    3  vi udttest1.c 
+    4  vi banner1.h
+    5  cp banner1.h banner2.h
+    7  cp banner1.c banner2.c
+    8  cp udttest1.c udttest2.c
+    9  vi banner2.h
+   10  vi banner2.c
+   11  vi udttest2.c 
+   12  cc udttest2.c -o run
+   13  cc udttest2.c banner2.o -o run
+   14  cc -c banner2.c
+   15  vi banner2.c
+   16  cc -c banner2.c
+   17  cc udttest2.c banner2.o -o run
+   18  ./run 
+   19  vi udttest2.c 
+   20  cc udttest2.c banner2.o -o run
+   21  ./run 
+   22  vi udttest2.c 
+   23  vi banner2.c
+   24  vi udttest2.c 
+   25  vi banner2.h
+   26  vi udttest2.c 
+   27  vi banner2.h
+   28  vi udttest2.c 
+   29  cc udttest2.c banner2.o -o run
+   30  ./run 
+   31  echo $?
+   32  vi banner2.h
+   33  cc udttest2.c banner2.o -o run
+   34  ./run 
+   35  vi banner2.h
+   36  echo $?
+   37  vi banner2.h
+   38  cc -c banner2.c
+   39  cc udttest2.c banner2.o -o run
+   40  ./run 
+   41  echo $?
+   42  vi banner2.h
+   43  vi banner2.c
+   44  cc -c banner2.c
+   45  vi banner2.c
+   46  cc -c banner2.c
+   47  cc udttest2.c banner2.o -o run
+   48  ./run 
+   49  vi banner2.h
+   50  vi banner2.c
+   51  vi udttest2.c 
+   52  vi banner2.
+   53  vi banner2.h
+   55  history >> ../cmd220327.txt
