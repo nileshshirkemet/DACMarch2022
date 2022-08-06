@@ -1,0 +1,37 @@
+    1  cd MDAC/Java/Basics/
+    2  mkdir PrimitiveTypeTest
+    3  cd PrimitiveTypeTest/
+    4  vi Program.java
+    5  javac Program.java 
+    6  java Program 200000 5
+    7  java Program 60000 30
+    8  vi Program.java
+    9  javac Program.java 
+   10  java Program 60000 30
+   11  javac Program.java 
+   12  vi Program.java
+   13  javac Program.java 
+   14  java Program 60000 30
+   15  vi Program.java
+   16  cd ..
+   17  cp -r PrimitiveTypeTest ClassTypeTest
+   18  cd ClassTypeTest/
+   19  vi Investment.java
+   20  javac Investment.java 
+   21  vi Program.java 
+   22  javac Program.java 
+   23  ls
+   24  javap -p Investment
+   25  javap -p Investment.class
+   26  java Program 200000 5
+   27  java Program 60000 30
+   28  vi Investment.java
+   29  vi Program.java 
+   30  javac Program.java 
+   31  java Program 
+   32  java Program 60000
+   33  java Program 60000 30
+   34  vi Program.java 
+   35  javac Program.java 
+   36  vi Program.java 
+   37  history >> ../../cmd220507.txt 

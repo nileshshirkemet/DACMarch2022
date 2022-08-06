@@ -1,0 +1,17 @@
+    2  mkdir Java
+    3  cd Java/
+    4  mkdir Basics
+    5  cd Basics/
+    6  vi Hello.java
+    7  javac Hello.java 
+    8  ls
+    9  java Greeter 
+   10  vi Hello.java
+   11  javac Hello.java 
+   12  java Greeter 
+   13  vi Hello.java
+   14  javac Hello.java 
+   15  java Greeter 
+   16  vi Hello.java
+   17  vi Greeter.class
+   18  javap Greeter.class 

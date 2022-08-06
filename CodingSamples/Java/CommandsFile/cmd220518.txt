@@ -1,0 +1,103 @@
+    1  cd MDAC/Java/
+    2  mkdir Platform
+    3  cd Platform/
+    4  mkdir ThreadTest
+    5  cd ThreadTest/
+    6  vi Worker.java
+    7  javac Worker.java 
+    8  vi Program1.java
+    9  vi ../../../Foundations/Platform/threadtest.c 
+   10  vi Program1.java
+   11  javac Program1.java 
+   12  java Program 
+   13  vi Program1.java
+   14  java Program 3
+   15  vi Program1.java
+   16  javap java.lang.Thread
+   17  javap java.lang.Runnable
+   18  vi Program1.java
+   19  javac Program1.java 
+   20  java Program
+   21  vi Program1.java
+   22  javap java.lang.Runnable
+   23  vi Program1.java
+   24  java Program 3
+   25  java Program 5
+   26  vi Program1.java
+   27  java Program
+   28* java Program 
+   29  java Program 5
+   30  java Program 7
+   31  javac Program1.java 
+   32  java Program 3
+   33  java Program 7
+   34  java Program 5
+   35  java Program 7
+   36  vi Program1.java
+   37  java Program
+   38  vi Program1.java
+   39  cp Program1.java Program2.java
+   40  vi Program2.java 
+   41  javac Program2.java 
+   42  java Program 
+   43  javac Program2.java 
+   44  vi Program2.java 
+   45  cd ..
+   46  mkdir SynchronizationTest
+   47  cd SynchronizationTest/
+   48  cp ../ThreadTest/Worker.java .
+   49  vi Program1.java
+   50  javac Program1.java 
+   51  java Program 
+   52  vi Program1.java
+   53  javac Program1.java 
+   54  java Program 
+   55  vi Program1.java
+   56  cp Program1.java Program2.java
+   57  vi Program2.java 
+   58  vi Program2.java
+   59  javac Program2.java
+   60  java Program 
+   61  vi Program2.java
+   62  history >> ../../cmd220518.txt
+    1  cd MDAC/Java/Platform/
+    2  cd SynchronizationTest/
+    3  vi Program2.java 
+    4  javac Program2.java 
+    5  vi Program2.java 
+    6  javap java.lang.Object
+    7  vi Program2.java 
+    8  cd ..
+    9  mkdir AsyncParallelTest
+   10  cd AsyncParallelTest/
+   11  vi Program1.java
+   13  cp ../ThreadTest/Worker.java .
+   14  vi Program1.java
+   15  vi Worker.java 
+   16  vi Program1.java
+   17  javac Program1.java 
+   18  java Program 10
+   19  java Program 20
+   20  java Program 30
+   21  vi Program1.java
+   22  cp Program1.java Program2.java
+   23  vi Program2.java 
+   24  javac Program2.java 
+   25  vi Program2.java 
+   26  javac Program2.java 
+   27  java Program 20
+   28  vi Program2.java 
+   29  java Program 20
+   30  java Program 30
+   31  vi Program2.java 
+   32  javap java.util.concurrent.CompletableFuture
+   33  javap java.util.concurrent.Future
+   34  vi Program2.java 
+   35  cp Program2.java Program3.java
+   36  vi Program3.java 
+   37  javac Program3.java 
+   38  java Program 20
+   39  vi Program3.java 
+   40  java Program 30
+   41  vi Program3.java
+   42  history >> ../../cmd220518.txt 

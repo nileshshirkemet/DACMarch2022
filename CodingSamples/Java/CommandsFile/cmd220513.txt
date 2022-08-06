@@ -1,0 +1,136 @@
+    1  cd MDAC/Java/
+    2  mkdir Runtime
+    3  cd Runtime/
+    4  vi ../../Foundations/Procedures/funcptrtest.c 
+    5  javap java.lang.Comparable
+    6  javap java.lang.Iterable
+    7  javap java.util.Iterator
+    8  javap java.lang.Runnable
+    9  javap java.lang.Serializable
+   10  javap java.io.Serializable
+   11  mkdir FunctionalTest1
+   12  cd FunctionalTest1/
+   13  vi Investment.java
+   14  javac Investment.java 
+   15  vi Investment.java
+   16  javac Investment.java 
+   17  vi Program.java
+   18  vi Investment.java
+   19  vi Program.java
+   21  javac Program.java
+   22  java Program
+   23  vi Investment.java
+   24  javac Investment.java 
+   25  java Program
+   26  javac Program.java
+   27  vi Investment.java
+   28  javac Program.java
+   29  vi Investment.java
+   30  javac Program.java
+   31  vi Investment.java
+   32  vi Program.java
+   33  javac Program.java
+   34  vi Program.java
+   35  javac Program.java
+   36  vi Program.java
+   37  javac Program.java
+   38  java Program
+   39  vi Program.java
+   40  vi Investment.java
+   41  vi ../../Inheritance/InterfaceTest1/Program.java 
+   42  vi Investment.java
+   43  vi Program.java
+   44  cp Program.java Program2.java
+   45  mv Program.java Program1.java
+   46  vi Program1.java 
+   47  vi Program.java
+   48  vi Program1.java 
+   49  javac Program1.java 
+   50  java Program 
+   51  vi Program1.java 
+   52  vi Program2.java 
+   53  javac Program2.java 
+   54  rm *.class
+   55  ls
+   56  javac Program1.java 
+   57  javac Investment.java 
+   58  javac Program1.java 
+   59  ls
+   60  rm *.class
+   61  javac Investment.java 
+   62  javac Program2.java 
+   63  ls
+   64  vi Program2.java 
+   65  javac Program2.java 
+   66  java Program 
+   67  vi Program2.java 
+   68  javac Program2.java 
+   69  java Program 
+   70  vi Program2.java 
+   71  javap -p Program
+   72  vi Program2.java 
+   73  vi Investment.java 
+   74  javap Program
+   75  vi Program2.java 
+   76  javac Program2.java 
+   77  vi Program2.java 
+   78  javac Program2.java 
+   79  vi Program2.java 
+   80  javac Program2.java 
+   81  javap Program
+   82  javap -p Program
+   83  vi Program2.java 
+    1  cd MDAC/Java/Runtime/
+    2  mkdir FunctionalTest2/
+    4  cd FunctionalTest2
+    5  vi Shop.java
+    6  javac Shop.java 
+    7  ls
+    8  javap -p Item.class 
+    9  vi Shop.java
+   10  vi ../FunctionalTest1/Investment.java 
+   11  vi Shop.java
+   12  javac Shop.java 
+   13  vi Shop.java
+   14  javac Shop.java 
+   15  ls
+   16  vi Program.java
+   17  javac Program.java 
+   18  java Program items intel
+   19  java Program items samsung
+   20  java Program items seagate
+   21  java Program items microsoft
+   22  vi Program.java
+   23  javac Program.java 
+   24  java Program items intel
+   25  java Program items samsung
+   26  java Program items microsoft
+   27  vi Program.java
+   28  javac Program.java
+   29  java Program customers 0
+   30  java Program customers 50000
+   31  java Program customers 60000
+   32  java Program customers 70000
+   33  java Program customers 80000
+   34  java Program customers 90000
+   35  java Program customers 100000
+   36  vi Program.java
+   37  vi Shop.java 
+   38  javac Shop.java 
+   39  vi Program.java
+   40  javac Program.java
+   41  java Program customers 0
+   42  vi Program.java
+   43  javac Program.java
+   44  vi Program.java
+   45  javac Program.java
+   46  vi Program.java
+   47  javac Program.java
+   48  java Program customers 0
+   49  java Program customers 50000
+   50  vi Program.java
+   51  javac Program.java
+   52  vi Program.java
+   53  javap java.util.stream.Stream
+   54  vi Program.java
+   55  history >> ../../cmd220513.txt 

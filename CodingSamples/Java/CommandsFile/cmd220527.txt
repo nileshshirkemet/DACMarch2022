@@ -1,0 +1,56 @@
+    1  ~/glassfish6/bin/asadmin start-domain
+    2  export CLASSPATH=.:~/glassfish6/glassfish/lib/javaee.jar 
+    3  cd MDAC/Java/Web/JSPTest/
+    5  javap jakarta.servlet.jsp.tagext.SimpleTag
+    6  vi BasicWebApp/welcome.html 
+    7  vi src/ClockTag.java
+    8  javac -d BasicWebApp/WEB-INF/classes/ src/ClockTag.java 
+    9  cp ~/MDAC/Support/WEB-INF/taglib.tld BasicWebApp/WEB-INF/basictags.tld
+   10  vi BasicWebApp/WEB-INF/basictags.tld 
+   11  touch BasicWebApp/.reload 
+   12  cp BasicWebApp/welcome.html BasicWebApp/usingtags.jsp
+   13  vi BasicWebApp/usingtags.jsp
+   14  vi src/ClockTag.java 
+   15  vi BasicWebApp/WEB-INF/basictags.tld 
+   16  vi BasicWebApp/usingtags.jsp
+   17  vi src/LottoTag.java
+   18  javac -d BasicWebApp/WEB-INF/classes/ src/LottoTag.java 
+   19  vi BasicWebApp/WEB-INF/basictags.tld 
+   20  touch BasicWebApp/.reload 
+   21  vi BasicWebApp/usingtags.jsp
+   22  vi BasicWebApp/WEB-INF/basictags.tld 
+   23  vi src/LottoTag.java
+   24  ~/apache-tomcat-10.0.20/bin/startup.sh 
+   25  jar -c -f BasicWebApp.war -C BasicWebApp/ .
+   26  cp BasicWebApp.war ~/apache-tomcat-10.0.20/webapps/ 
+   28  ~/apache-tomcat-10.0.20/bin/shutdown.sh 
+   29  ~/glassfish6/bin/asadmin stop-domain
+    1  ~/glassfish6/bin/asadmin start-domain
+    2  mkdir JSTLTest
+    3  mkdir -p ClassicWebApp/WEB-INF/classes
+    6  cp ../JSPTest/BasicWebApp/WEB-INF/web.xml ClassicWebApp/WEB-INF/
+    7  export CLASSPATH=.:~/glassfish6/glassfish/lib/javaee.jar:~/jars/* 
+    8  mkdir src
+    9  vi src/DB.java
+   10  javac -d ClassicWebApp/WEB-INF/classes/ src/*.java
+   11  ~/glassfish6/bin/asadmin deploy ClassicWebApp
+   12  vi src/CustomerBean.java
+   13  javac -d ClassicWebApp/WEB-INF/classes/ src/*.java
+   14  touch ClassicWebApp/.reload
+   15  vi ClassicWebApp/customer.jsp
+   16  vi src/DB.java
+   20  javac -d ClassicWebApp/WEB-INF/classes/ src/*.java
+   21  touch ClassicWebApp/.reload
+   22  vi src/DB.java
+   23  vi ClassicWebApp/customer.jsp
+   24  vi src/CustomerOrder.java
+   25  vi src/CustomerBean.java 
+   26  javac -d ClassicWebApp/WEB-INF/classes/ src/*.java
+   27  touch ClassicWebApp/.reload
+   28  vi ClassicWebApp/orders.jsp
+   29  vi ClassicWebApp/customer.jsp 
+   30  vi ClassicWebApp/orders.jsp
+   31  vi ClassicWebApp/customer.jsp 
+   32  vi ClassicWebApp/orders.jsp
+   33  ~/glassfish6/bin/asadmin stop-domain
+   34  history >> ../../cmd220527.txt 

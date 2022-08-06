@@ -1,0 +1,117 @@
+    1  cd MDAC/Java/Platform/
+    2  mkdir FileStreamTest
+    3  cd FileStreamTest/
+    4  vi Transformer.java
+    5  javac Transformer.java 
+    6  vi Program.java
+    7  javac Program.java 
+    8  java Program data1.txt
+    9  java Program Program.java 
+   10  vi Program.java
+   11  javac Program.java 
+   12  java Program Program.java data1.txt
+   13  vi data1.txt 
+   14  java Program Program.java data1.txt
+   15  vi data1.txt 
+   16  java Program Program.java data1.txt
+   17  vi data1.txt 
+   18  vi Program.java
+   19  javac Program.java 
+   20  java Program Program.java data1.txt
+   21  vi data1.txt 
+   22  java Program data1.txt data2.txt
+   23  vi data2.txt 
+   24  vi Program.java
+   25  cd ..
+   26  mkdir FileChannelTest
+   27  cd FileChannelTest/
+   28  vi Transformer.java
+   29  javac Transformer.java
+   30  vi Program.java
+   31  pwd
+   32  vi Program.java
+   33  javac Program.java 
+   34  vi Program.java 
+   35  java Program Program.java 
+   36  vi Program.java 
+   37  java Program Program.java 
+   38  vi Program.java 
+   39  history >> ../../cmd220519.txt
+    1  cd MDAC/Java/Platform/
+    2  mkdir SerializationTest
+    3  cd SerializationTest/
+    4  mkdir src
+    5  mkdir src/tourism.lib
+    6  mkdir src/tourism.app
+    7  mkdir dist
+    8  vi src/tourism.lib/Visitor.java
+    9  vi src/tourism.lib/Site.java
+   10  vi src/tourism.lib/SiteStore.java
+   11  vi src/tourism.lib/FileSiteStore.java
+   12  javap java.io.ObjectOutputStream
+   13  javap java.io.ObjectInputStream
+   14  vi src/tourism.lib/FileSiteStore.java
+   15  vi src/tourism.lib/SiteStore.java
+   16  vi src/tourism.lib/module-info.java
+   17  javac -d dist/ --module-source-path src/ --module tourism.lib
+   18  vi src/tourism.lib/Site.java
+   19  vi src/tourism.lib/FileSiteStore.java
+   20  javac -d dist/ --module-source-path src/ --module tourism.lib
+   21  vi src/tourism.lib/Site.java
+   22  vi src/tourism.lib/Visitor.java
+   23  vi src/tourism.lib/FileSiteStore.java
+   24  javac -d dist/ --module-source-path src/ --module tourism.lib
+   25  ls dist/
+   27  vi src/tourism.lib/module-info.java
+   28  vi src/tourism.app/Program.java
+   29  vi src/tourism.app/module-info.java
+   30  javac -d dist/ --module-source-path src/ --module tourism.app
+   31  ls dist/
+   32  ls
+   33  java -p dist -m tourism.app/tourism.ui.Program Jack
+   34  java -p dist -m tourism.app/tourism.ui.Program Jill
+   35  java -p dist -m tourism.app/tourism.ui.Program
+   36  java -p dist -m tourism.app/tourism.ui.Program Jill
+   37  java -p dist -m tourism.app/tourism.ui.Program
+   38  ls
+   39  vi CitiZoo.store 
+   40  java -p dist -m tourism.app/tourism.ui.Program John
+   41  java -p dist -m tourism.app/tourism.ui.Program 
+   42  rm CitiZoo.store 
+   43  java -p dist -m tourism.app/tourism.ui.Program 
+   44* 
+   45  java -p dist -m tourism.app/tourism.ui.Program Jill
+   46  java -p dist -m tourism.app/tourism.ui.Program Jack
+   47  java -p dist -m tourism.app/tourism.ui.Program 
+   48  ls
+   49  ls src/
+   50  vi src/tourism.lib/
+   51  ls src/tourism.lib/
+   52  vi src/tourism.lib/Visitor.java 
+   53  javap java.lang.String
+   54  javap java.util.Date
+   55  vi src/tourism.lib/Visitor.java 
+   56  vi src/tourism.lib/Site.java 
+   57  vi src/tourism.lib/SiteStore.java 
+   58  vi src/tourism.lib/FileSiteStore.java 
+   59  vi src/tourism.lib/module-info.java 
+   60  javac -d dist/ --module-source-path src/ --module tourism.lib
+   61  vi src/tourism.app/Program.java
+   62  vi src/tourism.app/module-info.java
+   63  javac -d dist/ --module-source-path src/ --module tourism.app
+   64  vi run.sh
+   66  bash run.sh 
+   67  bash run.sh Jill
+   68  bash run.sh 
+   69  chmod a+x run.sh 
+   70  ./run.sh 
+   71  jar -c -f tourlib.jar -C dist/tourism.lib .
+   72  jar -c -f tourapp.jar --main-class tourism.ui.Program -C dist/tourism.app .
+   73  ls
+   74  java -p . -m tourapp.jar 
+   75  java -p . -m tourism.app
+   76  java -p . -m tourism.app John
+   77  java -p . -m tourism.app 
+   78  ls
+   79  vi src/tourism.lib/module-info.java 
+   80  history >> ../../cmd220519.txt 

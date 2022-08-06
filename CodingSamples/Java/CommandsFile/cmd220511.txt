@@ -1,0 +1,183 @@
+    1  cd MDAC/Java/Inheritance/
+    2  cp -r AbstractClassTest/ InterfaceTest1
+    3  cd InterfaceTest1/
+    4  vi src/Profitable.java
+    5  javac -d . src/Profitable.java 
+    6  javap banking/Profitable.class 
+    7  vi src/SavingsAccount.java 
+    8  javac -d . src/SavingsAccount.java 
+    9  vi src/SavingsAccount.java 
+   10  javac -d . src/SavingsAccount.java 
+   11  vi Program.java 
+   12  javac Program.java 
+   13  java Program 
+   14  vi Program.java 
+   15  javac Program.java 
+   16  vi Program.java 
+   17  javac Program.java 
+   18  java Program 
+   19  vi Program.java 
+   20  vi ../../Basics/VarArgTest/Program.java 
+   21  vi Program.java 
+   22  vi ../ObjectClassTest/Interval.java 
+   23  vi Program.java 
+   24  javac Program.java 
+   25  java Program 
+   26  vi Program.java 
+   27  cd ..
+   28  mkdir InterfaceTest2
+   29  cd InterfaceTest2
+   30  mkdir src
+   31  vi src/TaxPayer.java
+   32  vi src/Programmer.java
+   33  vi src/Engineer.java
+   34  javac -d . src/*.java
+   35  ls
+   36  vi Program1.java
+   37  javac Program1.java 
+   38  vi Program1.java
+   39  javac Program1.java 
+   40  java Program John 200000
+   41  vi Program1.java
+   42  javac Program1.java 
+   43  java Program John 200000
+   44  java Program Jack 3
+   45  java Program Jim 400000
+   46  vi Program1.java
+   47  javac Program1.java 
+   48  java Program Jack 3
+   49  java Program John 200000
+   50  java Program Jim 400000
+   51  vi Program1.java
+   52  ls
+   53  vi Program1.java
+   54  javap java.lang.String
+   55  javap java.lang.AutoCloseable
+   56  cp Program1.java Program2.java
+   57  vi Program2.java 
+   58  javac Program2.java 
+   59  java Program Jack 3
+   60  java Program John 200000
+   61  java Program Jim 400000
+   62  vi Program2.java 
+   63  javac Program2.java 
+   64  vi Program2.java 
+   65  javac Program2.java 
+   66  java Program John 200000
+   67  java Program Jack 3
+   68  java Program Jim 400000
+   69  vi Program2.java 
+   70  javac Program2.java 
+   71  vi Program2.java 
+   72  javac Program2.java 
+   73  java Program JacK 3
+   74  vi Program2.java 
+   75  javac Program2.java 
+   76  java Program jack 3
+   77  java Program Jack 3
+   78  vi Program2.java 
+   79  javac Program2.java 
+   80  java Program jack 3
+   81  java Program Jack 3
+   82  vi Program2.java 
+   83  history >> ../../cmd220511.txt 
+    1  cd MDAC/Java/
+    2  mkdir Generics
+    3  cd Generics/
+    4  mkdir TypeParamTest1
+    5  cd TypeParamTest1/
+    6  vi Program1.java
+    7  javac Program1.java 
+    8  java Program 32
+    9  java Program 23
+   10  vi Program1.java
+   11  javac Program1.java 
+   12  vi Program1.java
+   13  javac Program1.java 
+   14  java Program 32
+   15  java Program 23
+   16  cp ../../Inheritance/ObjectClassTest/Interval.java .
+   17  javac Interval.java 
+   18  vi Program1.java
+   19  javac Interval.java 
+   20  javac Program1.java 
+   21  vi Program1.java
+   22  javac Program1.java 
+   23  java Program 32
+   24  java Program 23
+   25  vi Program1.java
+   26  javac Program1.java 
+   27  vi Program1.java
+   28  cp Program1.java Program2.java
+   29  vi Program2.java 
+   30  javac Program2.java 
+   31  java Program 32
+   32  java Program 23
+   33  vi Program2.java 
+   34  javac Program2.java 
+   35  java Program 23
+   36  java Program 32
+   37  vi Program2.java 
+   38  vi Program1.java 
+   39  vi Program2.java 
+   40  cp Program2.java Program3.java
+   41  vi Program3.java 
+   42  javac Program2.java 
+   43  java Program 23
+   44  java Program 32
+   45  javac Program3.java 
+   46  java Program 23
+   47  java Program 32
+   48  vi Program3.java 
+   49  javac Program3.java 
+   50  vi Program3.java 
+   51  javac Program3.java 
+   52  vi Program3.java 
+   53  javac Program3.java 
+   54  vi Program3.java 
+   55  javac Program3.java 
+   56  vi Program3.java 
+   57  javap java.lang.Object
+   58  javap java.lang.String
+   59  vi Program3.java 
+   60  javap java.lang.Comparable
+   61  vi Program3.java 
+   62  javac Program3.java 
+   63  vi Program3.java 
+   64  javac Program3.java 
+   65  java Program 
+   66  javap java.lang.Double
+   67  vi Program3.java 
+   68  javac Program3.java 
+   69  vi Program3.java 
+   70  javap java.lang.String
+   71  javap java.lang.Double
+   72  vi Program3.java 
+   73  vi Interval.java 
+   74  vi Program3.java 
+   75  vi Interval.java 
+   76  javac Interval.java 
+   77  javac Program3.java 
+   78  java Program 
+   79  vi Program3.java 
+   80  cd ..
+   81  mkdir TypeParamTest2
+   82  cd TypeParamTest2
+   83  vi Program.java
+   84  vi SimpleStack.java
+   85  javac SimpleStack.java 
+   86  vi Program1.java 
+   87  vi SimpleStack.java
+   88  vi Program1.java 
+   89  javac Program1.java 
+   90  vi Program1.java 
+   91  javac Program1.java 
+   92  java Program 
+   93  vi Program1.java 
+   94  javac Program1.java 
+   95  java Program 
+   96  vi Program1.java 
+   97  javac Program1.java 
+   98  java Program 
+   99  vi Program1.java 
+  100  history >> ../../cmd220511.txt 

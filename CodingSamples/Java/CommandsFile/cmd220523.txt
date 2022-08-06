@@ -1,0 +1,48 @@
+    2  cd MDAC/Java/Database/
+    3  mkdir SimpleSQLTest
+    4  cd SimpleSQLTest/
+    5  ls ~/jars/
+    6  cp ~/MDAC/Support/data/sales.db .
+    7  sqlite3 sales.db 
+    8  vi Program.java
+    9  javac Program.java 
+   10  java Program 
+   13  vi Program.java
+   14  export CLASSPATH=.:~/jars/*
+   15  java Program 
+   18  vi Program.java
+   19  javac Program.java 
+   20  java Program 
+   21  vi Program.java
+   22  javac Program.java 
+   23  java Program 
+   24  vi Program.java
+   25  javap java.sql.Connection
+   26  javap java.sql.Statement
+   27  javap java.sql.ResultSet
+   28  vi Program.java
+   29  sqlite3 sales.db 
+   30  java Program 
+   31  vi Program.java
+   32  javac Program.java 
+   33  java Program 
+   34  java Program 202
+   35  java Program 
+   36  java Program 205
+   37  vi Program.java
+   38  mysql -u dbpro -pDbpro@789
+   39  cd ..
+   40  mkdir ParamSQLTest
+   41  cd ParamSQLTest/
+   42  vi Program.java
+   43  javac Program.java 
+   44  vi Program.java
+   45  javac Program.java 
+   46  vi Program.java
+   47  javac Program.java 
+   48  java Program CU303 304 8
+   49  java Program CU302 305 9
+   50  java Program CU302 301 9
+   51  mysql -u dbpro -pDbpro@789
+   52  vi Program.java
+   53  history >> ../../cmd220523.txt

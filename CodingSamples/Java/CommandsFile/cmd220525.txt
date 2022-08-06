@@ -1,0 +1,66 @@
+    1  cd MDAC/Java/Database/
+    2  mkdir RMIMiddleTierTest
+    3  cd RMIMiddleTierTest/
+    4  mkdir src
+    5  cp -r ../JPAXmlMappingTest/META-INF/ .
+    6  cp ../JPAXmlMappingTest/src/OrderEntity.java src/
+    7  vi META-INF/orm.xml 
+    8  export CLASSPATH=.:~/jars/*
+    9  vi src/CounterEntity.java
+   10  javac -d . src/*.java
+   12  vi META-INF/persistence.xml 
+   13  vi src/OrderManager.java
+   14  vi src/OrderEntity.java 
+   15  vi src/CounterEntity.java 
+   16  vi META-INF/persistence.xml 
+   17  vi src/OrderEntity.java 
+   18  vi src/OrderManager.java
+   19  javap java.rmi.Remote
+   20  vi src/OrderManager.java
+   21  javac -d . src/*.java
+   22  vi src/OrderManager.java
+   23  vi src/CounterEntity.java 
+   24  javac -d . src/*.java
+   25  vi src/OrderManager.java
+   26  history >> ../../cmd220525.txt
+    1  vi src/OrderManagerService.java
+    2  vi src/CounterEntity.java 
+    3  vi src/OrderManagerService.java
+    4  mysql -u dbpro -pDbpro@789
+    5  vi src/OrderManagerService.java
+    6  vi ../ParamSQLTest/Program.java 
+    7  vi src/OrderManagerService.java
+    8  javac -d . src/*.java
+    9  vi src/OrderManagerService.java
+   10  javac -d . src/*.java
+   11  javac -d . src/CounterEntity.java 
+   12  vi src/OrderManagerService.java
+   13  javac -d . src/CounterEntity.java 
+   14  javac -d . src/*.java
+   15  vi src/CounterEntity.java 
+   16  javac -d . src/*.java
+   18  java sales.OrderManagerService &
+   19  vi Program.java
+   20  javac Program.java 
+   21  java Program CU303 304 6
+   22  vi Program.java
+   23  javac Program.java 
+   24  java Program CU303 304 6
+   25  ps
+   26  kill 543
+   27  vi src/OrderManagerService.java 
+   28  vi META-INF/persistence.xml 
+   29  java sales.OrderManagerService &
+   30  java Program CU303 304 6
+   31  java Program CU304 302 9
+   32  vi Program.java
+   33  javac Program.java 
+   34  java Program CU303
+   35  java Program CU302
+   36  java Program CU301
+   37  java Program CU304
+   38  vi Program.java
+   39  ps
+   40  kill 760
+   41  java Program CU302
+   42  history >> ../../cmd220525.txt 

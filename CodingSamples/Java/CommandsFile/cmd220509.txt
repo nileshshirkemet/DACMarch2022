@@ -1,0 +1,154 @@
+    1  cd MDAC/Java/Basics/
+    2  vi ClassTypeTest/Investment.java 
+    3  cp -r ClassTypeTest/ EnumTypeTest
+    4  cd EnumTypeTest/
+    5  vi Investment.java 
+    6  javac Investment.java 
+    7  ls
+    8  javac Program.java 
+    9  java Program 60000 30
+   10  vi Program.java 
+   11  javac Program.java 
+   12  java Program 60000 30
+   13  vi Investment.java 
+   14  javap -s Investment
+   15  javap -s -p Investment
+   16  vi Investment.java 
+   17  javac Investment.java 
+   18  java Program 60000 30
+   19  cd ..
+   20  mkdir VarArgTest
+   21  cd VarArgTest/
+   22  vi Program.java
+   23  javac Program.java 
+   24  java Program 
+   25  vi Program.java
+   26  javac Program.java 
+   27  vi Program.java
+   28  javac Program.java 
+   29  java Program 
+   30  vi Program.java
+   31  javac Program.java 
+   32  vi Program.java
+   33  javac Program.java 
+   34  java Program 
+   35  vi Program.java
+   36  javac Program.java 
+   37  java Program 
+   38  java Program 45.3 52.7
+   39  vi Program.java
+   40  javac Program.java 
+   41  vi Program.java
+   42  javac Program.java 
+   43  java Program 45.3 52.7
+   44  vi Program.java
+   45  cd ..
+   46  cd VarArgTest/
+   47  vi Program.java
+   48  cd ../..
+   49  mkdir Inheritance
+   50  cd Inheritance/
+   51  mkdir SubclassTest
+   52  cd SubclassTest/
+   53  mkdir src
+   54  vi src/Employee.java
+   55  ls
+   56  javac -d . src/Employee.java 
+   57  ls
+   58  ls payroll/
+   59  vi src/Employee.java
+   60  javac -d . src/Employee.java 
+   61  vi src/Employee.java
+   62  javac -d . src/Employee.java 
+   63  vi src/Employee.java
+   64  vi ../../Basics/VarArgTest/Program.java 
+   65  vi src/Employee.java
+   66  history >> ../../cmd220509.txt
+    1  cd MDAC/Java/Inheritance/
+    2  cd SubclassTest/
+    3  vi src/SalesPerson.java
+    4  javac -d . src/SalesPerson.java 
+    5  ls payroll/
+    6  vi Program.java
+    7  javac Program.java 
+    8  ls
+    9  vi Program.java
+   10  javac Program.java 
+   11  vi Program.java
+   12  javac Program.java 
+   13  java Program 
+   14  vi Program.java
+   15  javac Program.java 
+   16  vi Program.java
+   17  javac Program.java 
+   18  java Program 
+   19  vi Program.java
+   20  javac Program.java 
+   21  java Program 
+   22  vi Program.java
+   23  javac Program.java 
+   24  java Program 
+   25  vi Program.java
+   26  cd ..
+   27  mkdir ObjectClassTest
+   28  cd ObjectClassTest/
+   29  vi Interval.java
+   30  javac Interval.java 
+   31  vi Program.java
+   32  javac Program.java 
+   33  vi Program.java
+   34  javac Program.java 
+   35  vi Program.java
+   36  javac Program.java 
+   37  java Program 
+   38  vi Program.java
+   39  javac Program.java 
+   40  vi Program.java
+   41  javac Program.java 
+   43  vi Interval.java
+   44  javap java.lang.Object
+   45  vi Program.java
+   46  javac Program.java 
+   47  vi Interval.java
+   48  vi Program.java
+   49  javac Program.java 
+   50  java Program 
+   51  vi Interval.java 
+   52  javac Program.java 
+   53  javac Interval.java 
+   54  java Program 
+   55  vi Interval.java 
+   56  vi Program.java
+   57  javac Program.java 
+   58  java Program 
+   59  vi Program.java
+   60  javac Program.java 
+   61  java Program 
+   62  vi Program.java
+   63  javac Program.java 
+   64  java Program 
+   65  vi Program.java
+   66  javac Program.java 
+   67  java Program 
+   68  vi Program.java
+   69  javac Program.java 
+   70  java Program 
+   71  vi Interval.java 
+   72  javac Interval.java 
+   73  vi Interval.java 
+   74  javap -p java.lang.Object
+   75  vi Interval.java 
+   76  javac Interval.java 
+   77  vi Interval.java 
+   78  javac Interval.java 
+   79  vi Interval.java 
+   80  javac Interval.java 
+   81  java Program 
+   82  vi Interval.java 
+   83  vi Program.java
+   84  javac Program.java 
+   85  java Program 
+   86  vi Program.java
+   87  vi Interval.java 
+   89  javap -p java.lang.Object
+   90  history >> ../../cmd220509.txt 

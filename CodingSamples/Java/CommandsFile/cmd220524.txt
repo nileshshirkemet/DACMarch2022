@@ -1,0 +1,76 @@
+    1  cd MDAC/Java/Database/StoredProcTest/
+    2  vi Program.java 
+    3  javac Program.java 
+    4  export CLASSPATH=.:~/jars/*
+    5  java Program CU102 104 6
+    6  java Program CU106 102 8
+    7  java Program CU104 102 8
+    8  vi Program.java 
+    9  cd ..
+   10  mkdir JPAXmlMappingTest
+   11  cd JPAXmlMappingTest/
+   12  mkdir src
+   13  vi src/ProductEntity.java
+   14  javac -d . src/ProductEntity.java 
+   15  mkdir META-INF
+   16  cp ~/MDAC/Support/META-INF/*.xml META-INF/
+   17  vi META-INF/orm.xml 
+   18  vi META-INF/persistence.xml 
+   19  vi Program.java
+   20  javac Program.java 
+   22  java Program 
+   24  java Program 
+   26  java Program 
+   27  history >> ../../cmd220524.txt
+    1  cd MDAC/Java/Database/JPAXmlMappingTest/
+    2  vi src/ProductEntity.java 
+    3  vi META-INF/persistence.xml 
+    4  vi META-INF/orm.xml 
+    5  vi Program.java 
+    6  vi META-INF/orm.xml 
+    7  vi META-INF/persistence.xml 
+    8  vi Program.java 
+    9  export CLASSPATH=.:~/jars/*
+   10  java Program 
+   11  vi META-INF/persistence.xml 
+   12  java Program 
+   13  vi META-INF/persistence.xml 
+   14  java Program 
+   15  vi Program.java 
+   16  vi META-INF/persistence.xml 
+   17  vi Program.java 
+   20  vi src/OrderEntity.java
+   21  vi src/ProductEntity.java 
+   22  javac -d . src/*.java
+   23  vi META-INF/orm.xml 
+   24  vi Program.java 
+   25  javac Program.java 
+   26  vi Program.java 
+   27  javac Program.java 
+   28  java Program 
+   29  java Program 302
+   30  java Program 304
+   31  vi Program.java 
+   32  javac Program.java 
+   33  java Program 304
+   34  vi Program.java 
+   35  java Program 305
+   36  vi Program.java 
+   37  vi META-INF/orm.xml 
+   38  cd ..
+   39  cp -r JPAXmlMappingTest/ JPAAnnotationTest
+   40  cd JPAAnnotationTest/
+   41  rm META-INF/orm.xml 
+   42  java Program 
+   43  vi src/OrderEntity.java 
+   44  vi src/ProductEntity.java 
+   45  javac -d . src/*.java
+   46  vi src/OrderEntity.java 
+   47  vi src/ProductEntity.java 
+   48  javac -d . src/*.java
+   49  vi META-INF/persistence.xml 
+   50  java Program
+   51  java Program 302
+   52  vi src/ProductEntity.java 
+   53  vi META-INF/persistence.xml 
+   54  history >> ../../cmd220524.txt 

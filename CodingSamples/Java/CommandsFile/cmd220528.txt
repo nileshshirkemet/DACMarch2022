@@ -1,0 +1,34 @@
+    1  ~/glassfish6/bin/asadmin start-domain
+    2  cd ../Database/RMIMiddleTierTest/
+    3  ls
+    4  java -cp ~/jars/*:. sales.OrderManagerService &
+    5  java Program CU301
+    6  cd ../../Web/
+    7  mkdir JAXRSTest
+    8  cd JAXRSTest/
+    9  mkdir -p ModernWebApp/WEB-INF/classes
+   10  cp ../ServletTest/SimpleWebApp/WEB-INF/web.xml ModernWebApp/WEB-INF/
+   11  vi ModernWebApp/WEB-INF/web.xml 
+   12  mkdir src
+   13  cp ../../Database/RMIMiddleTierTest/src/OrderEntity.java src/
+   14  cp ../../Database/RMIMiddleTierTest/src/OrderManager.java src/
+   15  vi src/OrderManagerAPI.java
+   16  vi ModernWebApp/WEB-INF/web.xml 
+   17  vi src/OrderManagerAPI.java
+   18  export CLASSPATH=.:~/glassfish6/glassfish/lib/javaee.jar
+   19  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   20  ~/glassfish6/bin/asadmin deploy ModernWebApp
+   21  curl http://localhost:8080/ModernWebApp/api/orders/CU301
+   22  curl http://localhost:8080/ModernWebApp/api/orders/CU302
+   23  curl http://localhost:8080/ModernWebApp/api/orders/CU304
+   24  vi src/OrderManagerAPI.java
+   25  vi ModernWebApp/WEB-INF/web.xml 
+   26  vi src/OrderManagerAPI.java
+   27  javac -d ModernWebApp/WEB-INF/classes/ src/*.java
+   28  touch ModernWebApp/.reload
+   29  curl http://localhost:8080/ModernWebApp/api/orders/CU303
+   30  curl -X POST -H 'Content-Type: application/json' --data '{"customerId":"CU303","productNo":303, "quantity":3}' http://localhost:8080/ModernWebApp/api/orders
+   31  cp ~/MDAC/Support/html/salesui.* ModernWebApp/
+   32  vi ModernWebApp/salesui.html 
+   33  vi ModernWebApp/salesui.js 
+   34  ~/glassfish6/bin/asadmin stop-domain

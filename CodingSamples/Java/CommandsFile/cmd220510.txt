@@ -1,0 +1,72 @@
+    1  cd MDAC/Java/Inheritance/
+    2  javap java.lang.InterruptedException
+    3  javap java.lang.IOException
+    4* javap java.io.IOExceptio
+    5  javap java.lang.ArrayIndexOutOfRangeException
+    6  javap java.lang.ArrayIndexOutOfBoundsException
+    7  javap java.lang.IndexOutOfBoundsException
+    8  havap java.lang.Thread
+    9  javap java.lang.Thread
+   10  mkdir AbstractClassTest
+   11  cd AbstractClassTest/
+   12  mkdir src
+   13  vi src/InsufficientFundsException.java
+   14  vi src/IllegalTransferException.java
+   15  vi src/Account.java
+   16  javac -d . src/*.java
+   17  vi src/Account.java
+   18  vi src/InsufficientFundsException.java
+   19  vi src/Account.java
+   20  javac -d . src/*.java
+   21  vi src/Account.java
+   22  vi src/CurrentAccount.java
+   23  javac -d . src/CurrentAccount.java
+   24  vi src/CurrentAccount.java
+   25  javac -d . src/CurrentAccount.java
+   26  vi src/CurrentAccount.java
+   27  javac -d . src/CurrentAccount.java
+   28  vi src/SavingsAccount.java
+   29  javac -d . src/SavingsAccount.java 
+   30  vi src/CurrentAccount.java
+   31  vi src/Banker.java
+   32  javac -d . src/Banker.java
+   33  vi src/Banker.java
+   34  vi src/Account.java 
+   35  vi src/Banker.java
+   36  history >> ../../cmd220510.txt
+    1  cd MDAC/Java/Inheritance/AbstractClassTest/
+    2  vi Program.java
+    3  javac Program.java 
+    4  vi Program.java
+    5  javac Program.java 
+    6  vi Program.java
+    7  javac Program.java 
+    8  vi Program.java
+    9  javac Program.java 
+   10  vi Program.java
+   11  javac Program.java 
+   12  vi Program.java
+   13  javac Program.java 
+   14  java Program 3000
+   15  java Program 18000
+   18  java Program 6OOO
+   19  vi Program.java
+   20  java Program
+   21  vi Program.java
+   22  javap java.lang.Double
+   23  javap java.lang.NumberFormatException
+   24  javap java.lang.IllegalArgumentException
+   25  vi Program.java
+   26  java Program 3000
+   27  vi src/Banker.java 
+   28  javac -d . src/Banker.java 
+   29  java Program 3000
+   30  vi src/Banker.java 
+   31  vi Program.java
+   32  javac Program.java 
+   33  java Program 3000
+   34  vi Program.java
+   35  javac Program.java 
+   36  java Program 3000
+   37  vi Program.java
+   38  history >> ../../cmd220510.txt 

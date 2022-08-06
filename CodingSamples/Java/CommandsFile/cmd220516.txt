@@ -1,0 +1,104 @@
+    1  cd MDAC/Java/Runtime/ReflectionTest2
+    2  vi src/PersonalLoan.java 
+    3  javac -d lib/ src/*.java
+    4  vi src/HomeLoan.java 
+    5  javac -d lib/ src/*.java
+    6  vi Program1.java
+    7  javap java.lang.reflect.Method
+    8  vi Program1.java
+    9  javac Program1.java 
+   10  java Program 500000 finance.EducationLoan common
+   11  ls
+   12  java -Djava.class.path=.:lib Program 500000 finance.EducationLoan common
+   13  java -Djava.class.path=.:lib Program 500000 finance.EducationLoan masters
+   14  java -Djava.class.path=.:lib Program 500000 finance.HomeLoan common
+   15  java -Djava.class.path=.:lib Program 500000 finance.HomeLoan woman
+   16  java -Djava.class.path=.:lib Program 500000 finance.HomeLoan soldier
+   17  java -Djava.class.path=.:lib Program 500000 finance.PersonalLoan common
+   18  java -Djava.class.path=.:lib Program 500000 finance.PersonalLoan employee
+   19  java -Djava.class.path=.:lib Program 500000 finance.PersonalLoan teacher
+   20  vi Program1.java
+   21  java -Djava.class.path=.:lib Program 500000 finance.CarLoan common
+   22  vi Program1.java
+   23  javap java.lang.Class
+   24  javap java.lang.reflect.Constructor
+   25  vi Program1.java
+   26  java -Djava.class.path=lib Program 500000 finance.PersonalLoan employee
+   27  java -Djava.class.path=lib:. Program 500000 finance.PersonalLoan employee
+   28  java -cp lib:. Program 500000 finance.PersonalLoan employee
+   29  java  Program 500000 finance.PersonalLoan employee
+   30  export CLASSPATH=.:lib
+   31  java  Program 500000 finance.PersonalLoan employee
+   32  unset CLASSPATH
+   33  java  Program 500000 finance.PersonalLoan employee
+   34  java -cp lib:. Program 500000 finance.PersonalLoan employee
+   35  jar -c -f finlib.jar -C lib/ .
+   36  ls
+   37  jar -t -f finlib.jar 
+   38  java -cp finlib.jar:. Program 500000 finance.PersonalLoan employee
+   39  java -cp *:. Program 500000 finance.PersonalLoan employee
+   40  java -cp .:* Program 500000 finance.PersonalLoan employee
+   41  ls
+   42  jar -t -f finlib.jar 
+   43  history >> ../../cmd220516.txt
+    1  cd MDAC/Java/Runtime/ReflectionTest2/
+    2  java -cp .:lib Program 500000 finance.PersonalLoan common 
+    3  vi src/MaxDuration.java
+    4  javac -d lib/ src/MaxDuration.java 
+    5  vi src/EducationLoan.java 
+    6  vi src/HomeLoan.java 
+    7  vi src/PersonalLoan.java 
+    8  javac -d lib/ src/*.java
+    9  vi src/HomeLoan.java 
+   10  javac -d lib/ src/*.java
+   11  vi src/MaxDuration.java 
+   12  javac -d lib/ src/*.java
+   13  vi src/HomeLoan.java 
+   14  javac -d lib/ src/*.java
+   15  vi src/MaxDuration.java 
+   16  javac -d lib/ src/*.java
+   17  vi src/MaxDuration.java
+   18  vi src/PersonalLoan.java 
+   19  vi src/EducationLoan.java 
+   20  vi src/HomeLoan.java 
+   21  vi src/MaxDuration.java
+   23  javap java.lang.annotation.RetentionPolicy
+   24  javap java.lang.annotation.Target
+   25  javap java.lang.annotation.ElementType
+   26  vi src/MaxDuration.java
+   27  cp Program1.java Program2.java
+   28  vi Program2.java 
+   29  javac Program2.java 
+   30  ls
+   31  javac -cp .:lib Program2.java 
+   32  vi Program1.java 
+   33  vi Program2.java 
+   34  java -cp .:lib Program 500000 finance.EducationLoan common 
+   35  java -cp .:lib Program 500000 finance.EducationLoan masters 
+   36  java -cp .:lib Program 500000 finance.HomeLoan common
+   37  java -cp .:lib Program 500000 finance.HomeLoan woman
+   38  java -cp .:lib Program 500000 finance.HomeLoan soldier
+   39  java -cp .:lib Program 500000 finance.PersonalLoan common
+   40  java -cp .:lib Program 500000 finance.PersonalLoan employee
+   41  vi Program2.java 
+   42  vi src/EducationLoan.java 
+   43  vi src/HomeLoan.java 
+   44  vi src/PersonalLoan.java 
+   45  vi src/CarLoan.java
+   46  javac -d lib/ src/*.java
+   47  vi src/CarLoan.java
+   48  vi src/MaxDuration.java 
+   49  javac -d lib/ src/*.java
+   50  vi src/CarLoan.java
+   51  javac -d lib/ src/*.java
+   52  vi src/CarLoan.java
+   53  javac -d lib/ src/*.java
+   54  vi src/CarLoan.java
+   55  javac -d lib/ src/*.java
+   56  java -cp .:lib Program 500000 finance.CarLoan common
+   57  vi src/CarLoan.java
+   58  javac -d lib/ src/*.java
+   59  java -cp .:lib Program 500000 finance.CarLoan common
+   60  cd ..
+   61  javap java.lang.Object
+   62  history >> ../cmd220516.txt 

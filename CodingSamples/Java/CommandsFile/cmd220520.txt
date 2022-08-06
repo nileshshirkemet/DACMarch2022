@@ -1,0 +1,96 @@
+    1  cd MDAC/Java/
+    2  mkdir Communication
+    3  cd Communication/
+    4  mkdir SocketTest
+    5  cd SocketTest/
+    6  cp ../../Platform/FileStreamTest/Transformer.java .
+    7  vi Server.java
+    8  vi Transformer.java 
+    9  vi Server.java
+   10  javac Server.java 
+   11  vi Server.java
+   12  javac Server.java 
+   13  vi Client.java
+   14  javac Client.java 
+   15  vi Program.java
+   16  javac Program.java 
+   17  ls
+   18  java Program 
+   19  ls
+   20  ll
+   21  java Program &
+   22  ps
+   23  java Program monday
+   24  java Program NLMGBZ
+   25  kill 206
+   26  java Program monday
+   27  java Program &
+   28  java Program hello
+   29  kill 292
+   30  history >> ../../cmd220520.txt
+    1  cd MDAC/Java/Communication/
+    2  mkdir TCPServerTest
+    3  cd TCPServerTest/
+    4  cp ~/MDAC/Support/data/store.xml .
+    5  vi store.xml 
+    6  vi Shop.java
+    7  vi store.xml 
+    8  javac Shop.java 
+    9  vi Shop.java
+   10  vi Program.java
+   11  mv Program.java Program1.java 
+   12  vi Program1.java
+   13  javac Program1.java 
+   14  vi Program.java
+   15* 
+   16  java Program &
+   17  kill 144
+   18  kill 143
+   19  java Program &
+   20  kill 164
+   21  java Program &
+   22  kill 184
+   23  vi Program1.java 
+   24  javac Program1.java 
+   25  java Program &
+   26  telnet 127.0.0.1 4000
+   27  vi Program1.java 
+   28  telnet localhost 4000
+   29  vi Program1.java 
+   30  cp Program1.java Program2.java
+   31  vi Program2.java 
+   32  javac Program2.java 
+   33  java Program &
+   34  telnet localhost 4000
+   35  vi Program2.java 
+   36  javac Program2.java 
+   37  java Program &
+   38  kill 372
+   39  ps
+   40  kill 239
+   41  kill 322
+   42  java Program &
+   43  telnet localhost 4000
+   44  vi Program2.java 
+   45  vi Program1.java 
+   46  vi Program2.java 
+   47  telnet localhost 4000
+   48  cd ..
+   49  mkdir TCPClientTest
+   50  cd TCPClientTest/
+   51  vi ItemInfo.java
+   52  javac ItemInfo.java 
+   53  vi Program.java
+   54  javac Program.java
+   55  java Program localhost motherboard 5
+   56  java Program localhost printer 3
+   57  java Program localhost cpu 600
+   58  vi Program.java
+   59  vi ../TCPServerTest/Program1.java 
+   60  vi ../TCPServerTest/Shop.java 
+   61  vi Program.java
+   62  ps
+   63  pkill -ef Program
+   64  java Program localhost motherboard 5
+   65  java Program remotehost motherboard 5
+   66  history >> ../../cmd220520.txt 

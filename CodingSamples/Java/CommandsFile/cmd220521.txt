@@ -1,0 +1,37 @@
+    1  cd MDAC/Java/Communication/
+    2  vi TCPClientTest/Program.java 
+    3  mkdir HttpClientTest
+    4  cd HttpClientTest/
+    6  cp ../TCPServerTest/store.xml .
+    7  cp ../TCPServerTest/Shop.java .
+    8  cp ../TCPClientTest/ItemInfo.java  .
+    9  vi Server.java
+   10  javap com.sun.net.httpserver.HttpServer
+   11  vi Server.java
+   12  javac Server.java 
+   13  vi Program.java
+   14  javac Program.java 
+   15  vi Server.java
+   16  vi Program.java 
+   17  javac Server.java 
+   18  java Server &
+   19  ps
+   20  pkill -ef Program
+   21  ps
+   22  kill 206
+   23  java Server &
+   24  vi Server.java
+   27  curl http://localhost:4000/shopping/cpu
+   28  curl http://localhost:4000/shopping/ssd
+   29  curl http://localhost:4000/shopping/cabbage
+   30  vi Program.java 
+   31  javac Program.java 
+   32  java Program localhost cpu 4
+   33  vi Program.java 
+   34  javac Program.java 
+   35  java Program localhost cpu 4
+   36  java Program localhost mouse 6
+   37  java Program localhost printer 2
+   38  java Program localhost ssd 600
+   39  vi Program.java 
+   40  history >> ../../cmd220521.txt

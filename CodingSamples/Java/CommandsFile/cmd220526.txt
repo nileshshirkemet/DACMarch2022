@@ -1,0 +1,71 @@
+    1  ~/glassfish6/bin/asadmin start-domain
+    2  mkdir ServletTest
+    3  cd ServletTest/
+    4  mkdir -p SimpleWebApp/WEB-INF/classes
+    5  cp ~/MDAC/Support/WEB-INF/web.xml SimpleWebApp/WEB-INF/
+    6  vi SimpleWebApp/welcome.html
+    7  ~/glassfish6/bin/asadmin deploy SimpleWebApp
+    8  vi SimpleWebApp/WEB-INF/web.xml 
+    9  ~/glassfish6/bin/asadmin undeploy SimpleWebApp
+   10  ~/glassfish6/bin/asadmin deploy SimpleWebApp
+   11  export CLASSPATH=.:~/glassfish6/glassfish/lib/javaee.jar 
+   12  mkdir src
+   13  vi src/GreetingServlet.java
+   14  javap jakarta.servlet.Servlet
+   15  vi src/GreetingServlet.java
+   16  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   17  vi src/GreetingServlet.java
+   18  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   19  vi src/GreetingServlet.java
+   20  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   21  vi SimpleWebApp/WEB-INF/web.xml 
+   22  touch SimpleWebApp/.reload
+   23  vi SimpleWebApp/WEB-INF/web.xml 
+   24  vi src/GreetingServlet.java
+   25  cp SimpleWebApp/welcome.html SimpleWebApp/formpost.html
+   26  vi SimpleWebApp/formpost.html
+   27  vi src/CountingServlet.java
+   28  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   29  vi src/CountingServlet.java
+   30  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   31  touch SimpleWebApp/.reload
+   32  vi src/CountingServlet.java
+   33  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   34  touch SimpleWebApp/.reload
+   35  vi src/CountingServlet.java
+   36  javac -d SimpleWebApp/WEB-INF/classes/ src/*.java
+   37  touch SimpleWebApp/.reload
+   38  vi src/CountingServlet.java
+   39  ~/glassfish6/bin/asadmin stop-domain
+   40  history >> ../../cmd220526.txt
+    1  cd MDAC/Java/Web/ServletTest/
+    2  ~/glassfish6/bin/asadmin start-domain
+    3  export CLASSPATH=.:~/glassfish6/glassfish/lib/javaee.jar 
+    4  vi src/PausingFilter.java
+    5  javac -d SimpleWebApp/WEB-INF/classes/ src/PausingFilter.java 
+    6  touch SimpleWebApp/.reload 
+    7  vi src/PausingFilter.java
+    8  cd ..
+    9  mkdir JSPTest
+   10  cd JSPTest/
+   11  mkdir -p BasicWebApp/WEB-INF/classes
+   12  cp ~/MDAC/Support/WEB-INF/web.xml BasicWebApp/WEB-INF/
+   13  cp ../ServletTest/SimpleWebApp/welcome.html BasicWebApp/
+   14  ~/glassfish6/bin/asadmin deploy BasicWebApp/
+   15  cp BasicWebApp/welcome.html BasicWebApp/welcome.jsp
+   16  vi BasicWebApp/welcome.jsp
+   17  mkdir src
+   18  vi src/CounterBean.java
+   19  javac -d BasicWebApp/WEB-INF/classes/ src/*.java
+   20  touch BasicWebApp/.reload
+   21  cp BasicWebApp/welcome.jsp BasicWebApp/usingbeans.jsp
+   22  vi BasicWebApp/usingbeans.jsp
+   23  vi src/GreeterBean.java
+   24  javac -d BasicWebApp/WEB-INF/classes/ src/*.java
+   25  vi BasicWebApp/usingbeans.jsp 
+   26  touch BasicWebApp/.reload
+   27  vi BasicWebApp/usingbeans.jsp 
+   28  vi src/GreeterBean.java
+   29  vi BasicWebApp/usingbeans.jsp 
+   30  ~/glassfish6/bin/asadmin stop-domain
+   31  history >> ../../cmd220526.txt 

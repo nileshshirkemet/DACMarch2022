@@ -1,0 +1,140 @@
+    1  cd MDAC/Java/Runtime/
+    2  mkdir NativeMethodTest
+    3  cd NativeMethodTest/
+    4  vi Program.java
+    5  javac Program.java 
+    6  java Program gcd 48 72
+    7  javac -h . Program.java 
+    8  ls
+    9  vi Program.h
+   10  ls /usr/include/
+   11  ls ~/jdk-16.0.1/include/
+   12  export CPATH=~/jdk-16.0.1/include/:~/jdk-16.0.1/include/linux/
+   13  vi Program.h
+   14  vi natsup.c
+   15  cc -shared -fPIC -o libnatsup.so natsup.c
+   16  ld
+   17  ls
+   18  vi ../../../Foundations/Platform/encbuf.c 
+   19  java Program gcd 48 72
+   20  vi Program.java 
+   21  javac -h . Program.java 
+   22  java Program gcd 48 72
+   23  java -Djava.library.path=. Program gcd 48 72
+   24  java -Djava.library.path=. Program gcd 49995 59994
+   25  vi Program.java 
+   26  javac -h . Program.java 
+   27  vi Program.h
+   28  vi natsup.c
+   29  cc -shared -fPIC -o libnatsup.so natsup.c
+   30  vi Program.java 
+   31  java -Djava.library.path=. Program gcd 49995 59994
+   32  export LD_LIBRARY_PATH=.
+   33  java  Program gcd 49995 59994
+   34  vi Program.java 
+   35  ls
+   36  vi Program.java 
+   37  vi Program.h
+   38  vi Program.java 
+   39  javac -h . Program.java 
+   40  java  Program gcd 49995 59994
+   41  vi Program.java 
+   42  javac -h . Program.java 
+   43  java  Program gcd 49995 59994
+   44  vi Program.java 
+   45  javac -h . Program.java 
+   46  vi Program.java 
+   47  javac -h . Program.java 
+   48  vi Program.java 
+   49  javac -h . Program.java 
+   50  java Program square 1.0 2.5 3.0 4.5
+   51  vi Program.h
+   52  vi natsup.c 
+   53  cc -shared -fPIC -o libnatsup.so natsup.c
+   54  java Program square 1.0 2.5 3.0 4.5
+   55  vi Program.java 
+   56  javac -h . Program.java 
+   57  vi Program.h
+   58  vi natsup.c 
+   59  vi Program.java 
+   60  javac -h . Program.java 
+   61  java Program reverse monday
+   62  vi Program.h
+   63  vi natsup.c 
+   64  cc -shared -fPIC -o libnatsup.so natsup.c
+   65  java Program reverse monday
+   66  vi natsup.c 
+   67  history >> ../../cmd220517.txt
+    1  cd MDAC/Java/Runtime/
+    2  export CPATH=~/jdk-16.0.1/include/:~/jdk-16.0.1/include/linux/:
+    3  export LD_LIBRARY_PATH=.
+    4  cd NativeMethodTest/
+    5  cp ../../../Support/native/series.h .
+    6  cp ../../../Support/native/series.o .
+    7  vi series.h 
+    8  vi LegacySequenceBridge.java
+    9  javac -h . LegacySequenceBridge.java 
+   10  ls
+   11  vi LegacySequenceBridge.h
+   12  vi lsbsup.cpp
+   13  vi LegacySequenceBridge.java
+   14  javap -p -s LegacySequenceBridge
+   15  vi lsbsup.cpp
+   16  vi series.h 
+   17  vi lsbsup.cpp
+   18  c++ -shared -fPIC -o liblsbsup.so lsbsup.cpp series.o
+   19  vi Program.java 
+   20  javac Program.java 
+   21  vi Program.java 
+   22  javac Program.java 
+   23  java Program compute 1 2 3 10
+   24  vi Program.java 
+   25  javac Program.java 
+   26  java Program compute 1 2 3 10
+   27  java Program compute 1 3 5 10
+   28  java Program compute 1 2 4 10
+   29  vi Program.java 
+   30  vi LegacySequenceBridge.java 
+   31  javac -h . LegacySequenceBridge.java 
+   32  vi Program.java 
+   33  javac Program.java 
+   34  java Program compute 1 2 3 10
+   35  vi LegacySequenceBridge.java 
+   36  vi LegacySequenceBridge.h
+   37  vi Program.h
+   38  vi LegacySequenceBridge.java 
+   39  vi LegacySequenceBridge.h
+   40  vi lsbsup.cpp
+   41  vi LegacySequenceBridge.java 
+   42  javac -h . LegacySequenceBridge.java 
+   43  vi LegacySequenceBridge.java 
+   44  javac -h . LegacySequenceBridge.java 
+   45  vi LegacySequenceBridge.java 
+   46  javac -h . LegacySequenceBridge.java 
+   47  vi LegacySequenceBridge.java 
+   48  javac -h . LegacySequenceBridge.java 
+   49  vi LegacySequenceBridge.java 
+   50  javac -h . LegacySequenceBridge.java 
+   51  vi LegacySequenceBridge.h
+   52  vi lsbsup.cpp 
+   53  vi LegacySequenceBridge.h
+   54  vi LegacySequenceBridge.java 
+   55  javap -s -p Combinator.class 
+   56  vi lsbsup.cpp 
+   57  c++ -shared -fPIC -o liblsbsup.so lsbsup.cpp series.o
+   58  vi Program.java 
+   59  javac Program.java 
+   60  java Program compute 1 2 3 10
+   61  vi Program.java 
+   62  javac Program.java 
+   63  java Program compute 1 2 3 10
+   64  java Program compute 1 2 3 5
+   65  vi LegacySequenceBridge.java 
+   66  vi lsbsup.cpp 
+   67  javap -p -s LegacySequenceBridge
+   68  vi lsbsup.cpp 
+   69  vi Program.java 
+   70  vi LegacySequenceBridge.java 
+   71  vi Program.java 
+   72  vi lsbsup.cpp 
+   73  history >> ../../cmd220517.txt 
