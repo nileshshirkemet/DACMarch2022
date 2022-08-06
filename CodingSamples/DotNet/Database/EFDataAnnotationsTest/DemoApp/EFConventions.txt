@@ -1,0 +1,14 @@
+Entity Framework Core Mapping Conventions
+
+1. An entity type is mapped to a table whose name is same as the
+   name of DbSet type property which exposes entities of that type 
+   and if the DbConext derived class does not define such a property
+   it is mapped to the table whose name is same as the name of the
+   entity type.
+2. A property of an entity type is mapped to the column with the
+   same name in the table mapped to that entity type.
+3. The column mapped to Id or EId property of entity type E is
+   considered to be the primary key of the table mapped to E and
+   the column mapped to property FId is considered to be the
+   foreign key which references the primary key of the table mapped
+   to entity type F.
