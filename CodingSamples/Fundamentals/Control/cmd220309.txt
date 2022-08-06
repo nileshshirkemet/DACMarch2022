@@ -1,0 +1,39 @@
+    1  cd MDAC/Foundations/Basics/
+    2  vi memaddrtest.s
+    3  as memaddrtest.s -o memaddrtest.o
+    4  ld memaddrtest.o system.o -o run
+    5  ./run
+    6  vi memaddrtest.s
+    7  ./run
+    8  vi memaddrtest.s
+    9  as memaddrtest.s -o memaddrtest.o
+   10  ld memaddrtest.o system.o -o run
+   11  ./run
+   12  vi memaddrtest.s
+   13  as memaddrtest.s -o memaddrtest.o
+   14  ld memaddrtest.o system.o -o run
+   15  ./run
+   16  vi memaddrtest.s
+   17  as memaddrtest.s -o memaddrtest.o
+   18  ld memaddrtest.o system.o -o run
+   19  ./run
+   20  vi memaddrtest.s
+   21  as memaddrtest.s -o memaddrtest.o
+   22  ld memaddrtest.o system.o -o run
+   23  ./run
+   24  vi memaddrtest.s
+   25  ./run
+   26  vi memaddrtest.s
+   27  as memaddrtest.s -o memaddrtest.o
+   28  ld memaddrtest.o system.o -o run
+   29  ./run
+   30  vi memaddrtest.s
+   31  vi expressiontest.c
+   32  cc -c expressiontest.c
+   33  ls
+   34  ld expressiontest.o system.o -o run
+   35  ./run
+   36  vi expressiontest.c
+   37  ./run
+   38  vi expressiontest.c
+   39  history >> ../cmd220309.txt 

@@ -1,0 +1,80 @@
+    1  cd MDAC
+    2  mkdir Foundations
+    3  cd Foundations/
+    4  mkdir Basics
+    5  cd Basics
+    6  cp ../../Support/asm/* .
+    7  ls
+    8  vi helloasm.s
+    9  as helloasm.s -o helloasm.o
+   10  ls
+   11  vi helloasm.o
+   12  vi helloasm.s
+   13  ld helloasm.o system.o -o hello1
+   14  ls
+   15  ./hello1
+   16  vi helloasm.s 
+   17  as helloasm.s -o helloasm.o
+   18  ld helloasm.o system.o -o hello1
+   19  vi helloasm.s 
+   20  as helloasm.s -o helloasm.o
+   21  vi helloasm.s 
+   22  as helloasm.s -o helloasm.o
+   23  ld helloasm.o system.o -o hello1
+   24  ./hello1
+   25  vi helloasm.s 
+   26  ./hello1
+   27  ld helloasm.o system.o -o hello1
+   28  as helloasm.s -o helloasm.o
+   29  ld helloasm.o system.o -o hello1
+   30  ./hello1
+   31  vi helloasm.s 
+   32  as helloasm.s -o helloasm.o
+   33  ld helloasm.o system.o -o hello1
+   34  ./hello1
+   35  vi helloasm.s 
+   36  as helloasm.s -o helloasm.o
+   37  ld helloasm.o system.o -o hello1
+   38  ./hello1
+   39  vi helloasm.s 
+   40  as helloasm.s -o helloasm.o
+   41  ld helloasm.o system.o -o hello1
+   42  ./hello1
+   43  vi helloasm.s 
+   44  as helloasm.s -o helloasm.o
+   45  vi helloasm.s 
+   46  vi hellohl.c
+   47  ls
+   48  cc -S hellohl.c 
+   49  ls
+   50  vi hellohl.s
+   51  as hellohl.s -o hellohl.o
+   52  ls
+   53  ld hellohl.o system.o -o hello2
+   54  ls
+   55  ./hello2
+   56  vi hellohl.c
+   57  cc -S hellohl.c 
+   58  vi hellohl.c
+   59  cc -S hellohl.c 
+   60  as hellohl.s -o hellohl.o
+   61  ld hellohl.o system.o -o hello2
+   62  ./hello2
+   63  vi helloasm.s 
+   64  vi hellohl.s
+   65  ls
+   66  ll
+   67  ./hello1
+   68  ./hello2
+   69  vi hellohl.c
+   70  ls
+   71  vi hello1
+   72  vi hellohl.s
+   73  as hellohl.s -o hellohl.o
+   74  ld hellohl.o system.o -o hello2
+   75  ./hello2
+   76  cc -S hellohl.c 
+   77  as hellohl.s -o hellohl.o
+   78  ld hellohl.o system.o -o hello2
+   79  ./hello2
+   80  history >> ../../cmd220308.txt
