@@ -1,0 +1,5 @@
+This Folders contains All Hussain Sir Code For Computer Fundamentals Module
+IA32
+C
+C++ OOP
+Linux
