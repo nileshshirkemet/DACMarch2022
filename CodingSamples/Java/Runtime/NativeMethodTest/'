@@ -1,0 +1,17 @@
+class LegacySequenceBridge {
+
+	private double first, second, third;
+
+	public LegacySequenceBridge(double first, double second, double third) {
+		this.first = first;
+		this.second = second;
+		this.third = third;
+	}
+
+	public native double compute(int count, double identity);
+
+	static {
+		System.loadLibrary("lsbsup");
+	}
+}
+
