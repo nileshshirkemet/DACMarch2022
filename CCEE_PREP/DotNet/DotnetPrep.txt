@@ -1,0 +1,4 @@
+Pl Prepare OOP, Collection, Threads, LINQ, Delagates, Extension Methods in part1
+ADo.net, connectivity, Asp.net, Dependency Inhjection, Entity Framework, WCF in part2
+the way we conducted
+Refer IACSD Notes , our old Notes also
